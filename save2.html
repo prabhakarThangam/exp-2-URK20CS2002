@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible"content="IE=edge">
+   <meta name="viewport"content="width-device-width,initial-scale=1.0">
+   <title>Application</title>
+</head>
+<body>
+    <body style="background-color:rgb(19, 41, 165); font-family:verdana; font-size:100%;">
+    <h1 align="center"> Application</h1>
+   <div align="center">
+   <hr>
+   <a href="save1.html" align="center"> Home Page </a>&emsp;&emsp;
+   <a href="Second.html" align="center"> Application </a>
+   </div>
+   <form action="server.php"method="post">
+       <fieldset>
+        <div align="center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNc1Jk9EJ0oaard6tP4fPC0Y6IJGyJtQvYg&usqp=CAU" width="1000" height="700">
+           <legend align="center">Job Application Form</legend>
+          <table align="center">
+              <tr>
+                  <td>Name</td>
+                  <td><input type='text'placeholder="Enter your name"required></td>
+              </tr>
+              <tr>
+                  <td>Application No</td>
+                  <td><input type='text'placeholder="AT Usercode"required></td>
+              </tr>
+              <tr>
+                  <td>Password</td>
+                  <td><input type='password'placeholder="********"required></td>
+              </tr>
+              <tr>
+                  <td>date of birth</td>
+                  <td><input type='date'required></td>
+              </tr>
+              <tr>
+                  <td>Age</td>
+                  <td><input type='number'required></td>
+              </tr>
+              <tr>
+                  <td>mobile number</td>
+                  <td><input type='tel'pattern="[0-9]{10}"placeholder="Enter your mobile number"required></td>
+              </tr>
+              <tr>
+                  <td>Email id</td>
+                  <td><input type='email'placeholder="Enter your email id"required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                   <td><input type="radio"name="Gender"value="male"required>male
+                   <input type="radio"name="Gender"value="Female"required>Female</td>
+                </tr>
+                
+                <tr>
+                   <td>Languages Known</td>
+                    <td><input type='checkbox' name="Tamil" value="Tamil"required>Tamil
+                   <input type='checkbox' name="English" value="English"required>English
+                   <input type='checkbox' name="malayalam" value="malayalam"required>malayalam
+                   <input type='checkbox' name="Telugu" value="Telugu"required>Telugu
+                   <input type='checkbox'name="hindi" value="hindi"required>hindi
+                </td>
+                </tr>
+                <tr>
+                    <td>select your course</td>
+                    <td><input list="Course" name="Course" placeholder="Select your course"><br> <br>
+                        <datalist id="Course">
+                            <option value="B.Tech Computer science and Engineeering">
+                            <option value="B.Tech Civil Engineeering">
+                            <option value="B.Tech Electrical and Electronics Engineeering">
+                </tr>
+                <tr>
+                    <td width="50%">Upload your Resume:</td>
+                   <td width="50%">
+                    <input type="file"><br> <br>
+                   </td>
+                </tr>
+                <tr>
+                   <td width="50%"></td>
+                    <td width="50%">
+                        <progress id="file"value="50"max="100">50%uploading completed</progress>
+                        <label for="file">50%uploading completed</label><br> <br>
+                    </td>
+                    <tr>
+                        <td width="50%"></td>
+                        <td width="50%">
+                            <input type="submit"value="submit"><br> <br>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+    </html>
